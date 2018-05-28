@@ -4,13 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".TowerCraneFragment">
 
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@mipmap/background_tower_cranes"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
     <TextView
+        android:paddingStart="16dp"
+        android:textSize="30sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/towercraneIb" />
+
+
 
 
 
