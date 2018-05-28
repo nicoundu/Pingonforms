@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/pingonicon"
+        android:padding="16dp"
+        android:src="@mipmap/pingon_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:textSize="30sp"
+        android:fontFamily="@font/vegur_bold"
+        android:layout_marginTop="12dp"
+        android:padding="16dp"
+        android:id="@+id/texttitle"
+        android:layout_toEndOf="@+id/pingonicon"
+        android:text="@string/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

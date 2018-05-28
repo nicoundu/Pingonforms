@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Pingonforms</string>
+    <string name="title_activity_tabbed">Servicios Pingon</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="app_title">Servicios Pingon</string>
+    <string name="facebookTv">Facebook</string>
+    <string name="linkedinTv">LinkedIn</string>
+    <string name="webpageTv">www.pingon.cl</string>
+    <string name="equipmentTv">Equipos</string>
+    <string name="contactTv">Contacto</string>
+    <string name="applyTv">Postula Aquí</string>
+    <string name="towercraneIb">Grúas Torre</string>
+    <string name="platformIb">Plataformas</string>
+    <string name="forkliftIb">Montacargas</string>
+    <string name="elevatorIb">Elevadores</string>
+    <string name="nameEt">Nombre</string>
+    <string name="phoneEt">Telefono</string>
+    <string name="mailEt">Correo Electronico</string>
+    <string name="interestareaEt">Area de Interes</string>
+    <string name="sendBt">Enviar</string>
+    <string name="towercraneText">En Pingon contamos con 6 modelos de grúas torre.</string>
+    <string name="platformText">En Pingon contamos con mono mastiles y bi mastiles.</string>
+    <string name="forkliftText">En Pingon contamos con 3 modelos de montacargas.</string>
+    <string name="elevatorText">En Pingon contamos con 2 modelos de elevadores.</string>
+    <string-array name="spinner_array">
+        <item>Operadores</item>
+        <item>Administración</item>
+        <item>Operaciones</item>
+        <item>Montaje</item>
+        <item>Mantención</item>
+    </string-array>
+    <string name="title_activity_tower_cranes">Grúas Torre</string>
+    <string name="title_activity_platforms">Plataformas</string>
+    <string name="title_activity_forklift">Montacargas</string>
+    <string name="title_activity_elevator">Elevadores</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

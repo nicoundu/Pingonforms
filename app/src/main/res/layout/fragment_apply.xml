@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplyFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/vegur_bold"
+        android:id="@+id/applyTv"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:drawableStart="@mipmap/apply_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applyTv" />
+
+    <EditText
+        android:fontFamily="@font/vegur_bold"
+        android:visibility="invisible"
+        android:id="@+id/nameEt"
+        android:text="@string/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:fontFamily="@font/vegur_bold"
+        android:visibility="invisible"
+        android:id="@+id/phoneEt"
+        android:text="@string/phoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:fontFamily="@font/vegur_bold"
+        android:visibility="invisible"
+        android:id="@+id/mailEt"
+        android:text="@string/mailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/interestareaEt"
+        android:fontFamily="@font/vegur_bold"
+        android:visibility="invisible"
+        android:text="@string/interestareaEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/interestareaEt"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+
+    <RadioGroup
+        android:id="@+id/interestareaRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="20dp"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Administración"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operadores"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electromecanica"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operaciones"/>
+
+    </RadioGroup>
+
+    <Button
+        android:fontFamily="@font/vegur_bold"
+        android:visibility="invisible"
+        android:id="@+id/sendBt"
+        android:text="@string/sendBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

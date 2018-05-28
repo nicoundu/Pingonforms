@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IndexActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:fontFamily="@font/vegur_bold"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:drawableStart="@mipmap/facebook_icon"
+        android:id="@+id/facebookTv"
+        android:text="@string/facebookTv"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:fontFamily="@font/vegur_bold"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:drawableStart="@mipmap/linkedin_icon"
+        android:id="@+id/linkedinTv"
+        android:text="@string/linkedinTv"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:fontFamily="@font/vegur_bold"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:drawableStart="@mipmap/pingon_small_icon"
+        android:id="@+id/webpageTv"
+        android:text="@string/webpageTv"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:fontFamily="@font/vegur_bold"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:drawableStart="@mipmap/pingon_tower_crane_icon"
+        android:id="@+id/equipmentTv"
+        android:text="@string/equipmentTv"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:fontFamily="@font/vegur_bold"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:drawableStart="@mipmap/baseline_phone_black_24"
+        android:id="@+id/contactTv"
+        android:text="@string/contactTv"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        tools:layout="@layout/activity_index"
+        android:gravity="center_horizontal"
+        android:name="cl.pingon.pingonforms.ApplyFragment"
+        android:padding="16dp"
+        android:id="@+id/applyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </fragment>
+
+
+</LinearLayout>
