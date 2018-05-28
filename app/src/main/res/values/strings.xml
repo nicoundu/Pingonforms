@@ -33,9 +33,9 @@
         <item>Mantención</item>
     </string-array>
     <string name="title_activity_tower_cranes">Grúas Torre</string>
-    <string name="title_activity_platforms">Plataformas</string>
-    <string name="title_activity_forklift">Montacargas</string>
-    <string name="title_activity_elevator">Elevadores</string>
+    <string name="title_activity_platforms">Plataforma</string>
+    <string name="title_activity_forklift">Montacarga</string>
+    <string name="title_activity_elevator">Elevador</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
