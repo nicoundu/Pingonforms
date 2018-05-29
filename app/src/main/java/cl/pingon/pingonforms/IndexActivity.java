@@ -66,6 +66,14 @@ public class IndexActivity extends AppCompatActivity {
             }
         });
 
+        apply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent applyIntent = new Intent(IndexActivity.this, ApplyActivity.class);
+                startActivity(applyIntent);
+            }
+        });
+
     }
 
     @Override

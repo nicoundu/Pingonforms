@@ -62,16 +62,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <fragment
-        tools:layout="@layout/activity_index"
+    <TextView
+        android:fontFamily="@font/vegur_bold"
+        android:id="@+id/applyTv"
         android:gravity="center_horizontal"
-        android:name="cl.pingon.pingonforms.ApplyFragment"
         android:padding="16dp"
-        android:id="@+id/applyFragment"
+        android:textSize="18sp"
+        android:drawableStart="@mipmap/apply_icon"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </fragment>
+        android:layout_height="wrap_content"
+        android:text="@string/applyTv" />
 
 
 </LinearLayout>
