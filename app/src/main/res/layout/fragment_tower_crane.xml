@@ -17,6 +17,7 @@
             android:layout_height="150dp" />
 
         <TextView
+            android:textColor="@color/textcolorDark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
@@ -92,6 +93,7 @@
     </RadioGroup>
 
     <Button
+        android:fontFamily="@font/vegur_bold"
         android:id="@+id/equipmentquoteBtn"
         android:text="COTIZAR EQUIPO"
         android:layout_width="match_parent"
