@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:background="@color/backgroundcolor"
+            android:alpha="0.9"
             android:scaleType="centerCrop"
             android:src="@mipmap/background_platform"
             android:layout_width="match_parent"
@@ -61,6 +61,7 @@
         android:layout_height="wrap_content" />
 
     <RadioGroup
+        android:id="@+id/platformsRg"
         android:fontFamily="@font/vegur_bold"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"

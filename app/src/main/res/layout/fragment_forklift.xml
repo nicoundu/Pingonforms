@@ -12,6 +12,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:alpha="0.9"
             android:scaleType="centerCrop"
             android:src="@mipmap/forklift_background"
             android:layout_width="match_parent"
