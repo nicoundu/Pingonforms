@@ -25,13 +25,10 @@
     <string name="platformText">En Pingon contamos con mono mastiles y bi mastiles.</string>
     <string name="forkliftText">En Pingon contamos con 3 modelos de montacargas.</string>
     <string name="elevatorText">En Pingon contamos con 2 modelos de elevadores.</string>
-    <string-array name="spinner_array">
-        <item>Operadores</item>
-        <item>Administración</item>
-        <item>Operaciones</item>
-        <item>Montaje</item>
-        <item>Mantención</item>
-    </string-array>
+    <string name="operatorsRb">Operadores</string>
+    <string name="administrationRb">Administración</string>
+    <string name="operationsRb">Operaciones</string>
+    <string name="electromechanicRb">Electromecanica</string>
     <string name="title_activity_tower_cranes">Grúas\nTorre</string>
     <string name="title_activity_platforms">Plata\nforma</string>
     <string name="title_activity_forklift">Monta\ncarga</string>

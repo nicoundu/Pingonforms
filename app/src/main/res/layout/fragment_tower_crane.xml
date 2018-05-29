@@ -17,7 +17,7 @@
             android:layout_height="150dp" />
 
         <TextView
-            android:textColor="@color/textcolorDark"
+            android:textColor="@color/textcolorLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
@@ -28,7 +28,9 @@
     </FrameLayout>
 
     <EditText
-        android:paddingStart="16sp"
+        android:inputType="textPersonName"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:hint="Ingrese su nombre"
         android:textSize="16sp"
         android:fontFamily="@font/vegur_bold"
@@ -37,7 +39,9 @@
         android:layout_height="wrap_content" />
 
     <EditText
-        android:paddingStart="16sp"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:textSize="16sp"
         android:fontFamily="@font/vegur_bold"
         android:id="@+id/mailinputEt"
@@ -47,7 +51,8 @@
 
     <TextView
         android:fontFamily="@font/vegur_bold"
-        android:padding="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:textSize="16sp"
         android:text="Seleccione el modelo"
         android:layout_width="match_parent"
@@ -56,6 +61,7 @@
     <RadioGroup
         android:fontFamily="@font/vegur_bold"
         android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -93,6 +99,8 @@
     </RadioGroup>
 
     <Button
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:fontFamily="@font/vegur_bold"
         android:id="@+id/equipmentquoteBtn"
         android:text="COTIZAR EQUIPO"

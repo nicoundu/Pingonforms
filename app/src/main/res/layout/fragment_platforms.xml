@@ -6,18 +6,93 @@
     android:orientation="vertical"
     tools:context=".PlatformsFragment">
 
-    <ImageView
-        android:scaleType="centerCrop"
-        android:src="@mipmap/background_platform"
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp" />
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@color/backgroundcolor"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/background_platform"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:textColor="@color/textcolorLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vegur_bold"
+            android:text="@string/platformIb"
+            android:padding="8dp"
+            android:layout_gravity="bottom"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+    <EditText
+        android:inputType="textPersonName"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Ingrese su nombre"
+        android:textSize="16sp"
+        android:fontFamily="@font/vegur_bold"
+        android:id="@+id/nameinputEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/vegur_bold"
+        android:id="@+id/mailinputEt"
+        android:hint="Ingrese su correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:fontFamily="@font/vegur_bold"
         android:paddingStart="16dp"
-        android:textSize="30sp"
+        android:paddingEnd="16dp"
+        android:textSize="16sp"
+        android:text="Seleccione el modelo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Plataforma" />
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:fontFamily="@font/vegur_bold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:tag="Ancho maximo 11,9 metros"
+            android:id="@+id/monomastilRb"
+            android:fontFamily="@font/vegur_bold"
+            android:text="Mono Mastil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--al apretar la alternativa, que muestre la descripcion-->
+
+        <RadioButton
+            android:tag="Ancho maximo 32 metros"
+            android:id="@+id/bimastilRb"
+            android:fontFamily="@font/vegur_bold"
+            android:text="Bi Mastil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <Button
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:fontFamily="@font/vegur_bold"
+        android:id="@+id/equipmentquoteBtn"
+        android:text="COTIZAR EQUIPO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

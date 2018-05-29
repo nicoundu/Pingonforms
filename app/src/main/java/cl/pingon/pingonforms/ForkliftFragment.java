@@ -2,10 +2,15 @@ package cl.pingon.pingonforms;
 
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 
 public class ForkliftFragment extends Fragment {
@@ -26,4 +31,20 @@ public class ForkliftFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_forklift, container, false);
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        RadioGroup radioGroup = view.findViewById(R.id.forkLiftRg);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton button = group.findViewById(checkedId);
+                if (button.getTag() != null) {
+                    String tag = (String) button.getTag();
+                    Toast.makeText(getContext(), tag, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
 }
