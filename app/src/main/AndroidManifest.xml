@@ -23,6 +23,7 @@
             android:label="@string/title_activity_tabbed"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".IndexActivity" />
+        <activity android:name=".ApplyActivity"></activity>
     </application>
 
 </manifest>

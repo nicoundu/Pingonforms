@@ -12,7 +12,7 @@
     <string name="equipmentTv">Equipos</string>
     <string name="contactTv">Contacto</string>
     <string name="applyTv">Postula Aquí</string>
-    <string name="towercraneIb">Grúas Torre</string>
+    <string name="towercraneIb">Grúa Torre</string>
     <string name="platformIb">Plataformas</string>
     <string name="forkliftIb">Montacargas</string>
     <string name="elevatorIb">Elevadores</string>
@@ -32,10 +32,10 @@
         <item>Montaje</item>
         <item>Mantención</item>
     </string-array>
-    <string name="title_activity_tower_cranes">Grúas Torre</string>
-    <string name="title_activity_platforms">Plataforma</string>
-    <string name="title_activity_forklift">Montacarga</string>
-    <string name="title_activity_elevator">Elevador</string>
+    <string name="title_activity_tower_cranes">Grúas\nTorre</string>
+    <string name="title_activity_platforms">Plata\nforma</string>
+    <string name="title_activity_forklift">Monta\ncarga</string>
+    <string name="title_activity_elevator">Eleva\ndor</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

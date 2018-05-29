@@ -67,4 +67,8 @@ public class IndexActivity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+    }
 }
