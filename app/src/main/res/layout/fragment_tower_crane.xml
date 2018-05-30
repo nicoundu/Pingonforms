@@ -18,14 +18,14 @@
             android:layout_height="150dp" />
 
         <TextView
-            android:textColor="@color/textcolorLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/vegur_bold"
-            android:text="@string/towercraneIb"
-            android:padding="8dp"
             android:layout_gravity="bottom"
-            android:textSize="30sp" />
+            android:fontFamily="@font/vegur_bold"
+            android:padding="8dp"
+            android:text="@string/towercraneIb"
+            android:textColor="@color/textcolorLight"
+            android:textSize="35sp" />
 
         <TextView
             android:layout_gravity="bottom"
@@ -41,7 +41,7 @@
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:hint="Ingrese su nombre"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:fontFamily="@font/vegur_bold"
         android:id="@+id/nameinputEt"
         android:layout_width="match_parent"
@@ -51,7 +51,7 @@
         android:inputType="textEmailAddress"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:fontFamily="@font/vegur_bold"
         android:id="@+id/mailinputEt"
         android:hint="Ingrese su correo"
@@ -62,7 +62,7 @@
         android:fontFamily="@font/vegur_bold"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:text="Seleccione el modelo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -76,40 +76,45 @@
         android:layout_height="wrap_content">
 
         <RadioButton
+            android:textSize="14sp"
             android:id="@+id/gp4010Rb"
-            android:tag="Largo pluma 40 metros y carga en punta 1 ton"
+            android:tag="@string/gp4010"
             android:fontFamily="@font/vegur_bold"
             android:text="GP 40.10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
+            android:textSize="14sp"
             android:id="@+id/gp4511Rb"
-            android:tag="Largo pluma 45 metros y carga en punta 1.1 ton"
+            android:tag="@string/gp4511"
             android:fontFamily="@font/vegur_bold"
             android:text="GP 45.11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
+            android:textSize="14sp"
             android:id="@+id/gp5113Rb"
-            android:tag="Largo pluma 51 metros y carga en punta 1.3 ton"
+            android:tag="@string/gp5113"
             android:fontFamily="@font/vegur_bold"
             android:text="GP 51.13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
+            android:textSize="14sp"
             android:id="@+id/gp5425Rb"
-            android:tag="Largo pluma 54 metros y carga en punta 2.5 ton"
+            android:tag="@string/gp5425"
             android:fontFamily="@font/vegur_bold"
             android:text="GP 54.25"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
+            android:textSize="14sp"
             android:id="@+id/pt56312Rb"
-            android:tag="Largo pluma 63 metros y carga en punta 1.2 ton"
+            android:tag="@string/pt56312"
             android:fontFamily="@font/vegur_bold"
             android:text="PT 563.12"
             android:layout_width="match_parent"
@@ -118,11 +123,12 @@
     </RadioGroup>
 
     <Button
+        android:textSize="18sp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:fontFamily="@font/vegur_bold"
-        android:id="@+id/equipmentquoteBtn"
-        android:text="COTIZAR EQUIPO"
+        android:id="@+id/tcquoteBtn"
+        android:text="@string/quoteBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

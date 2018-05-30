@@ -40,7 +40,29 @@ public class ApplyActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, strings);
 
         spinner.setAdapter(adapter);
+
+        if (nameEt.getText().toString().length() == 0 )
+            nameEt.setError("Nombre es obligatorio");
+
+        if (phoneEt.getText().toString().length() == 0 )
+            phoneEt.setError("Teléfono es obligatorio");
+
+        if (mailEt.getText().toString().length() == 0 )
+            mailEt.setError("Correo es obligatorio");
+
+        sendBt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (spinner.getSelectedItem().toString().trim() == "Seleccione un área") {
+                    Toast.makeText(ApplyActivity.this, "Debes seleccionar un área", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
     }
+
+
 
 
 

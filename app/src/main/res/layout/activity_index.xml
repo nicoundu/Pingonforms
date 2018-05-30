@@ -14,7 +14,7 @@
         android:drawableStart="@mipmap/facebook_icon"
         android:id="@+id/facebookTv"
         android:text="@string/facebookTv"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -25,7 +25,7 @@
         android:drawableStart="@mipmap/linkedin_icon"
         android:id="@+id/linkedinTv"
         android:text="@string/linkedinTv"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -36,7 +36,7 @@
         android:drawableStart="@mipmap/pingon_small_icon"
         android:id="@+id/webpageTv"
         android:text="@string/webpageTv"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -47,7 +47,7 @@
         android:drawableStart="@mipmap/pingon_tower_crane_icon"
         android:id="@+id/equipmentTv"
         android:text="@string/equipmentTv"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -58,7 +58,7 @@
         android:drawableStart="@mipmap/baseline_phone_black_24"
         android:id="@+id/contactTv"
         android:text="@string/contactTv"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -67,7 +67,7 @@
         android:id="@+id/applyTv"
         android:gravity="center_horizontal"
         android:padding="16dp"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:drawableStart="@mipmap/apply_icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

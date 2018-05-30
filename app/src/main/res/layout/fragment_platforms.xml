@@ -26,7 +26,7 @@
             android:text="@string/platformIb"
             android:padding="8dp"
             android:layout_gravity="bottom"
-            android:textSize="30sp" />
+            android:textSize="35sp" />
 
         <TextView
             android:layout_gravity="bottom"
@@ -42,7 +42,7 @@
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:hint="Ingrese su nombre"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:fontFamily="@font/vegur_bold"
         android:id="@+id/nameinputEt"
         android:layout_width="match_parent"
@@ -52,7 +52,7 @@
         android:inputType="textEmailAddress"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:fontFamily="@font/vegur_bold"
         android:id="@+id/mailinputEt"
         android:hint="Ingrese su correo"
@@ -63,7 +63,7 @@
         android:fontFamily="@font/vegur_bold"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:text="Seleccione el modelo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -77,30 +77,32 @@
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:tag="Ancho maximo 11,9 metros"
+            android:textSize="14sp"
+            android:tag="Ancho máximo de 11,9 metros"
             android:id="@+id/monomastilRb"
             android:fontFamily="@font/vegur_bold"
-            android:text="Mono Mastil"
+            android:text="Mono Mástil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <!--al apretar la alternativa, que muestre la descripcion-->
 
         <RadioButton
-            android:tag="Ancho maximo 32 metros"
+            android:textSize="14sp"
+            android:tag="Ancho máximo de 32 metros"
             android:id="@+id/bimastilRb"
             android:fontFamily="@font/vegur_bold"
-            android:text="Bi Mastil"
+            android:text="Bi Mástil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </RadioGroup>
 
     <Button
+        android:textSize="18sp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:fontFamily="@font/vegur_bold"
-        android:id="@+id/equipmentquoteBtn"
-        android:text="COTIZAR EQUIPO"
+        android:id="@+id/pfquoteBtn"
+        android:text="@string/quoteBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

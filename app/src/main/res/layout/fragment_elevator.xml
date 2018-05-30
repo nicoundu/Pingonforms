@@ -27,15 +27,15 @@
             android:text="@string/elevatorIb"
             android:padding="8dp"
             android:layout_gravity="bottom"
-            android:textSize="30sp" />
+            android:textSize="35sp" />
 
         <TextView
             android:layout_gravity="bottom"
-            android:background="@color/blackcolor"
             android:alpha="0.4"
-            android:textColor="@color/textcolorDark"
+            android:textColor="@color/textcolorLight"
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:layout_height="50dp"
+            android:background="@color/blackcolor" />
 
         <LinearLayout
             android:id="@+id/controls"
@@ -54,7 +54,7 @@
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:hint="Ingrese su nombre"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:fontFamily="@font/vegur_bold"
         android:id="@+id/nameinputEt"
         android:layout_width="match_parent"
@@ -64,7 +64,7 @@
         android:inputType="textEmailAddress"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:fontFamily="@font/vegur_bold"
         android:id="@+id/mailinputEt"
         android:hint="Ingrese su correo"
@@ -75,7 +75,7 @@
         android:fontFamily="@font/vegur_bold"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:text="Seleccione el modelo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -89,6 +89,7 @@
         android:layout_height="wrap_content">
 
         <RadioButton
+            android:textSize="14sp"
             android:tag="Carga maxima 1.500 kilos o 12 personas"
             android:id="@+id/ecp1500Rb"
             android:fontFamily="@font/vegur_bold"
@@ -97,6 +98,7 @@
             android:layout_height="wrap_content" />
 
         <RadioButton
+            android:textSize="14sp"
             android:tag="Carga maxima 2.000 kilos o 18 personas"
             android:id="@+id/ecp2000Rb"
             android:fontFamily="@font/vegur_bold"
@@ -107,16 +109,14 @@
     </RadioGroup>
 
     <Button
+        android:textSize="18sp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:fontFamily="@font/vegur_bold"
-        android:id="@+id/equipmentquoteBtn"
-        android:text="COTIZAR EQUIPO"
+        android:id="@+id/evquoteBtn"
+        android:text="@string/quoteBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-
-
 
 
 </LinearLayout>

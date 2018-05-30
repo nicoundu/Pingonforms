@@ -1,10 +1,6 @@
 <resources>
     <string name="app_name">Servicios Pingon</string>
     <string name="title_activity_tabbed">Servicios Pingon</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
-    <string name="tab_text_3">Tab 3</string>
-    <string name="section_format">Hello World from section: %1$d</string>
     <string name="app_title">Servicios Pingon</string>
     <string name="facebookTv">Facebook</string>
     <string name="linkedinTv">LinkedIn</string>
@@ -12,14 +8,14 @@
     <string name="equipmentTv">Equipos</string>
     <string name="contactTv">Contacto</string>
     <string name="applyTv">Postula Aquí</string>
-    <string name="towercraneIb">Grúa Torre</string>
+    <string name="towercraneIb">Grúas Torre</string>
     <string name="platformIb">Plataformas</string>
     <string name="forkliftIb">Montacargas</string>
     <string name="elevatorIb">Elevadores</string>
     <string name="nameEt">Nombre</string>
-    <string name="phoneEt">Telefono</string>
-    <string name="mailEt">Correo Electronico</string>
-    <string name="interestareaEt">Area de Interes</string>
+    <string name="phoneEt">Teléfono</string>
+    <string name="mailEt">Correo Electrónico</string>
+    <string name="interestareaEt">Área de Interés</string>
     <string name="sendBt">Enviar</string>
     <string name="towercraneText">En Pingon contamos con 6 modelos de grúas torre.</string>
     <string name="platformText">En Pingon contamos con mono mastiles y bi mastiles.</string>
@@ -28,11 +24,16 @@
     <string name="operatorsRb">Operadores</string>
     <string name="administrationRb">Administración</string>
     <string name="operationsRb">Operaciones</string>
-    <string name="electromechanicRb">Electromecanica</string>
+    <string name="electromechanicRb">Electromecánica</string>
     <string name="title_activity_tower_cranes">Grúas\nTorre</string>
     <string name="title_activity_platforms">Plata\nforma</string>
     <string name="title_activity_forklift">Monta\ncarga</string>
-    <string name="title_activity_elevator">Eleva\ndor</string>
+    <string name="title_activity_elevator">Eleva\ndores</string>
+    <string name="gp4010">Largo pluma: 40 metros\n Carga en punta: 1,0 ton</string>
+    <string name="gp4511">Largo pluma: 45 metros\n Carga en punta: 1,1 ton</string>
+    <string name="gp5113">Largo pluma: 51 metros\n Carga en punta: 1,3 ton</string>
+    <string name="gp5425">Largo pluma: 54 metros\n Carga en punta: 2,5 ton</string>
+    <string name="pt56312">Largo pluma: 63 metros\n Carga en punta: 1,2 ton</string>
+    <string name="quoteBtn">COTIZAR EQUIPO</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

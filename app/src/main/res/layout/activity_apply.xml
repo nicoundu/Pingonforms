@@ -6,7 +6,9 @@
     tools:context=".ApplyActivity"
     android:orientation="vertical">
 
+
     <EditText
+        android:textSize="18sp"
         android:inputType="textPersonName"
         android:padding="16dp"
         android:fontFamily="@font/vegur_bold"
@@ -16,6 +18,7 @@
         android:layout_height="wrap_content" />
 
     <EditText
+        android:textSize="18sp"
         android:inputType="phone"
         android:padding="16dp"
         android:fontFamily="@font/vegur_bold"
@@ -25,6 +28,7 @@
         android:layout_height="wrap_content" />
 
     <EditText
+        android:textSize="18sp"
         android:inputType="textEmailAddress"
         android:padding="16dp"
         android:fontFamily="@font/vegur_bold"
@@ -46,14 +50,17 @@
     <Spinner
         android:id="@+id/interestareaDd"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="36dp"
         android:layout_marginBottom="16dp"
+        android:paddingEnd="20dp"
         android:paddingStart="20dp"
-        android:paddingEnd="20dp">
+        android:scrollbarSize="18dp"
+        android:textSize="18sp">
 
     </Spinner>
 
     <Button
+        android:textSize="18sp"
         android:fontFamily="@font/vegur_bold"
         android:id="@+id/sendBt"
         android:text="@string/sendBt"
