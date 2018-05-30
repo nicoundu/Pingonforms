@@ -43,35 +43,15 @@
         android:text="@string/interestareaEt"
         android:textSize="18sp" />
 
-    <RadioGroup
-        android:id="@+id/interestareaRg"
+    <Spinner
+        android:id="@+id/interestareaDd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp">
 
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/administrationRb"/>
-
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/operatorsRb"/>
-
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/electromechanicRb"/>
-
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/operationsRb"/>
-
-    </RadioGroup>
+    </Spinner>
 
     <Button
         android:fontFamily="@font/vegur_bold"

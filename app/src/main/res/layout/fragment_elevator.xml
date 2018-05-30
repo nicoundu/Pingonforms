@@ -11,6 +11,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/elevatorIv"
             android:alpha="0.9"
             android:scaleType="centerCrop"
             android:src="@mipmap/elevator_background"
@@ -18,7 +19,8 @@
             android:layout_height="150dp" />
 
         <TextView
-            android:textColor="@color/textcolorDark"
+            android:id="@+id/elevatorTv"
+            android:textColor="@color/textcolorLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
@@ -26,6 +28,24 @@
             android:padding="8dp"
             android:layout_gravity="bottom"
             android:textSize="30sp" />
+
+        <TextView
+            android:layout_gravity="bottom"
+            android:background="@color/blackcolor"
+            android:alpha="0.4"
+            android:textColor="@color/textcolorDark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:id="@+id/controls"
+            android:background="#7f000000"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
     </FrameLayout>
 
 

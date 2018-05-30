@@ -5,12 +5,17 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ApplyActivity extends AppCompatActivity {
 
@@ -22,11 +27,22 @@ public class ApplyActivity extends AppCompatActivity {
         final EditText nameEt = findViewById(R.id.nameEt);
         final EditText phoneEt = findViewById(R.id.phoneEt);
         final EditText mailEt = findViewById(R.id.mailEt);
-        final RadioGroup applyareaRg = findViewById(R.id.interestareaRg);
+        final Spinner spinner = findViewById(R.id.interestareaDd);
         final Button sendBt = findViewById(R.id.sendBt);
 
+        List<String> strings = new ArrayList<>();
+        strings.add("Seleccione un área");
+        strings.add("Administración");
+        strings.add("Operaciones");
+        strings.add("Electromecanica");
+        strings.add("Operadores");
 
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, strings);
+
+        spinner.setAdapter(adapter);
     }
+
+
 
 
 }
