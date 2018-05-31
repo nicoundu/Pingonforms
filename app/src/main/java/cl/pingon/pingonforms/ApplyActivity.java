@@ -45,21 +45,29 @@ public class ApplyActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
                 String name = nameEt.getText().toString();
-                if (nameEt.getText().toString().length() == 0 ) {
-                    nameEt.setError("Nombre es obligatorio");
+                if (nameEt.getText().toString().length() == 0) {
+                    Toast.makeText(ApplyActivity.this, "Debes ingresar tu nombre", Toast.LENGTH_SHORT).show();
+                    ;
                     return;
                 }
 
                 String phone = phoneEt.getText().toString();
-                if (phoneEt.getText().toString().length() == 0 ) {
-                    phoneEt.setError("Teléfono es obligatorio");
+                if (phoneEt.getText().toString().length() == 0) {
+                    Toast.makeText(ApplyActivity.this, "Debes ingresar tu telefono", Toast.LENGTH_SHORT).show();
+                }
+                if (phoneEt.getText().toString().length() <= 9) {
+                    Toast.makeText(ApplyActivity.this, "El teléfono debe tener 9 numeros", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 String mail = mailEt.getText().toString();
-                if (mailEt.getText().toString().length() == 0 ) {
-                    mailEt.setError("Correo es obligatorio");
+                if (mailEt.getText().toString().length() == 0) {
+                    Toast.makeText(ApplyActivity.this, "Debes ingresar tu correo", Toast.LENGTH_SHORT).show();
+                }
+                if (mailEt.getText().toString().length() <= 6) {
+                    Toast.makeText(ApplyActivity.this, "Debes ingresar un correo valido", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -67,7 +75,7 @@ public class ApplyActivity extends AppCompatActivity {
                     Toast.makeText(ApplyActivity.this, "Debes seleccionar un área", Toast.LENGTH_SHORT).show();
                 } else {
                     String answer = spinner.getSelectedItem().toString();
-                    Toast.makeText(ApplyActivity.this, "Estimado" + nameEt + "hemos recibido su solicitud", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ApplyActivity.this, "Estimado/a " + name + ", hemos recibido su solicitud", Toast.LENGTH_SHORT).show();
 
                 }
             }
@@ -75,10 +83,6 @@ public class ApplyActivity extends AppCompatActivity {
 
 
     }
-
-
-
-
 
 
 }

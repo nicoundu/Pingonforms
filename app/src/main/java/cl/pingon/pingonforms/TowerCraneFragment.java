@@ -66,20 +66,20 @@ public class TowerCraneFragment extends Fragment {
 
 
                 String name = nameinputEt.getText().toString();
-                if (nameinputEt.getText().toString().length() == 0 ) {
+                if (nameinputEt.getText().toString().length() == 0) {
                     nameinputEt.setError("Nombre es obligatorio");
                     return;
                 }
 
                 String mail = mailinputEt.getText().toString();
-                if (mailinputEt.getText().toString().length() == 0 ) {
+                if (mailinputEt.getText().toString().length() == 0) {
                     mailinputEt.setError("Correo es obligatorio");
                     return;
                 }
 
                 int id = radioGroup.getCheckedRadioButtonId();
 
-                if (id != -1){
+                if (id != -1) {
                     RadioButton radioButton = radioGroup.findViewById(id);
                     String answer = radioButton.getText().toString();
                     Toast.makeText(getContext(), "Estimado/a " + name + ", seleccionaste la grúa " + answer, Toast.LENGTH_SHORT).show();
@@ -91,7 +91,6 @@ public class TowerCraneFragment extends Fragment {
 
 
     }
-
 
 
 }
