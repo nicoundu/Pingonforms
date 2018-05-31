@@ -3,75 +3,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IndexActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".IndexActivity">
 
 
     <TextView
-        android:fontFamily="@font/vegur_bold"
-        android:gravity="center_horizontal"
-        android:padding="16dp"
-        android:drawableStart="@mipmap/facebook_icon"
         android:id="@+id/facebookTv"
-        android:text="@string/facebookTv"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:fontFamily="@font/vegur_bold"
-        android:gravity="center_horizontal"
-        android:padding="16dp"
-        android:drawableStart="@mipmap/linkedin_icon"
-        android:id="@+id/linkedinTv"
-        android:text="@string/linkedinTv"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:fontFamily="@font/vegur_bold"
-        android:gravity="center_horizontal"
-        android:padding="16dp"
-        android:drawableStart="@mipmap/pingon_small_icon"
-        android:id="@+id/webpageTv"
-        android:text="@string/webpageTv"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:fontFamily="@font/vegur_bold"
-        android:gravity="center_horizontal"
-        android:padding="16dp"
-        android:drawableStart="@mipmap/pingon_tower_crane_icon"
-        android:id="@+id/equipmentTv"
-        android:text="@string/equipmentTv"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:fontFamily="@font/vegur_bold"
-        android:gravity="center_horizontal"
-        android:padding="16dp"
-        android:drawableStart="@mipmap/baseline_phone_black_24"
-        android:id="@+id/contactTv"
-        android:text="@string/contactTv"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/applyTv"
-        android:gravity="center_horizontal"
-        android:padding="16dp"
-        android:textSize="20sp"
-        android:drawableStart="@mipmap/apply_icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/applyTv" />
+        android:drawableStart="@mipmap/facebook_icon"
+        android:fontFamily="@font/vegur_bold"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="@string/facebookTv"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/linkedinTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@mipmap/linkedin_icon"
+        android:fontFamily="@font/vegur_bold"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="@string/linkedinTv"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/webPageTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@mipmap/pingon_small_icon"
+        android:fontFamily="@font/vegur_bold"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="@string/webpageTv"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/equipmentTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@mipmap/pingon_tower_crane_icon"
+        android:fontFamily="@font/vegur_bold"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="@string/equipmentTv"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/contactTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@mipmap/baseline_phone_black_24"
+        android:fontFamily="@font/vegur_bold"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="@string/contactTv"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/applyTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@mipmap/apply_icon"
+        android:fontFamily="@font/vegur_bold"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="@string/applyTv"
+        android:textSize="20sp" />
 
 
 </LinearLayout>

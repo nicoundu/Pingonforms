@@ -9,10 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class ElevatorFragment extends Fragment {
@@ -34,10 +32,10 @@ public class ElevatorFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        final EditText nameinputEt = view.findViewById(R.id.nameinputEt);
-        final EditText mailinputEt = view.findViewById(R.id.mailinputEt);
-        final Button evquoteBtn = view.findViewById(R.id.evquoteBtn);
-        final RadioGroup radioGroup = view.findViewById(R.id.elevatorsRg);
+        final EditText nameinputEt = view.findViewById(R.id.nameInputEt);
+        final EditText mailinputEt = view.findViewById(R.id.mailInputEt);
+        final Button evquoteBtn = view.findViewById(R.id.elevatorQuoteBtn);
+        final RadioGroup radioGroup = view.findViewById(R.id.elevatorRg);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -59,19 +57,19 @@ public class ElevatorFragment extends Fragment {
                 mailinputEt.setError(null);
 
                 String name = nameinputEt.getText().toString();
-                if (nameinputEt.getText().toString().length() == 0 ) {
+                if (nameinputEt.getText().toString().length() == 0) {
                     nameinputEt.setError("Nombre es obligatorio");
                     return;
                 }
                 String mail = mailinputEt.getText().toString();
-                if (mailinputEt.getText().toString().length() == 0 ) {
+                if (mailinputEt.getText().toString().length() == 0) {
                     mailinputEt.setError("Correo es obligatorio");
                     return;
                 }
 
                 int id = radioGroup.getCheckedRadioButtonId();
 
-                if (id != -1){
+                if (id != -1) {
 
                     RadioButton radioButton = radioGroup.findViewById(id);
                     String answer = radioButton.getText().toString();

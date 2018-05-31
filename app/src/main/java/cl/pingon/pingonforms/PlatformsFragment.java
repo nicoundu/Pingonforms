@@ -14,17 +14,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class PlatformsFragment extends Fragment {
 
 
     public PlatformsFragment() {
     }
 
-    public static PlatformsFragment newInstance(){
+    public static PlatformsFragment newInstance() {
         return new PlatformsFragment();
     }
 
@@ -40,10 +36,10 @@ public class PlatformsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        final EditText nameinputEt = view.findViewById(R.id.nameinputEt);
-        final EditText mailinputEt = view.findViewById(R.id.mailinputEt);
-        final Button pfquoteBtn = view.findViewById(R.id.pfquoteBtn);
-        final RadioGroup radioGroup = view.findViewById(R.id.platformsRg);
+        final EditText nameinputEt = view.findViewById(R.id.nameInputEt);
+        final EditText mailinputEt = view.findViewById(R.id.mailInputEt);
+        final Button pfquoteBtn = view.findViewById(R.id.platformQuoteBtn);
+        final RadioGroup radioGroup = view.findViewById(R.id.platformRg);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -64,20 +60,20 @@ public class PlatformsFragment extends Fragment {
                 mailinputEt.setError(null);
 
                 String name = nameinputEt.getText().toString();
-                if (nameinputEt.getText().toString().length() == 0 ) {
+                if (nameinputEt.getText().toString().length() == 0) {
                     nameinputEt.setError("Nombre es obligatorio");
                     return;
                 }
 
                 String mail = mailinputEt.getText().toString();
-                if (mailinputEt.getText().toString().length() == 0 ) {
+                if (mailinputEt.getText().toString().length() == 0) {
                     mailinputEt.setError("Correo es obligatorio");
                     return;
                 }
 
                 int id = radioGroup.getCheckedRadioButtonId();
 
-                if (id != -1){
+                if (id != -1) {
 
                     RadioButton radioButton = radioGroup.findViewById(id);
                     String answer = radioButton.getText().toString();

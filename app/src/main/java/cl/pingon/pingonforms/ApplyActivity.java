@@ -1,17 +1,12 @@
 package cl.pingon.pingonforms;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -27,8 +22,8 @@ public class ApplyActivity extends AppCompatActivity {
         final EditText nameEt = findViewById(R.id.nameEt);
         final EditText phoneEt = findViewById(R.id.phoneEt);
         final EditText mailEt = findViewById(R.id.mailEt);
-        final Spinner spinner = findViewById(R.id.interestareaDd);
-        final Button sendBt = findViewById(R.id.sendBt);
+        final Spinner spinner = findViewById(R.id.interestAreaDd);
+        final Button sendBt = findViewById(R.id.sendBtn);
 
         List<String> strings = new ArrayList<>();
         strings.add("Seleccione un área");

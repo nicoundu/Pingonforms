@@ -12,99 +12,101 @@
         android:orientation="vertical">
 
 
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:alpha="0.9"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/background_platform"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:textColor="@color/textcolorLight"
+            <ImageView
+                android:id="@+id/platformIv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:alpha="0.9"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/background_platform" />
+
+            <TextView
+                android:id="@+id/platformTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/blackcolorTransparent"
+                android:fontFamily="@font/vegur_bold"
+                android:padding="8dp"
+                android:text="@string/platformIb"
+                android:textColor="@color/textcolorLight"
+                android:textSize="35sp" />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/nameInputEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
-            android:text="@string/platformIb"
-            android:padding="8dp"
-            android:layout_gravity="bottom"
-            android:textSize="35sp"
-            android:background="@color/blackcolorTransparent"/>
+            android:hint="Ingrese su nombre"
+            android:inputType="textPersonName"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="18sp" />
 
-    </FrameLayout>
-
-    <EditText
-        android:inputType="textPersonName"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:hint="Ingrese su nombre"
-        android:textSize="18sp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/nameinputEt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:inputType="textEmailAddress"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textSize="18sp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/mailinputEt"
-        android:hint="Ingrese su correo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:fontFamily="@font/vegur_bold"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textSize="18sp"
-        android:text="Seleccione el modelo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <RadioGroup
-        android:id="@+id/platformsRg"
-        android:fontFamily="@font/vegur_bold"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:textSize="14sp"
-            android:tag="Ancho máximo de 11,9 metros"
-            android:id="@+id/monomastilRb"
-            android:fontFamily="@font/vegur_bold"
-            android:text="Mono Mástil"
+        <EditText
+            android:id="@+id/mailInputEt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
-            android:textSize="14sp"
-            android:tag="Ancho máximo de 32 metros"
-            android:id="@+id/bimastilRb"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
-            android:text="Bi Mástil"
+            android:hint="Ingrese su correo"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/platformRgTitleTv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vegur_bold"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="Seleccione el modelo"
+            android:textSize="18sp" />
 
-    </RadioGroup>
+        <RadioGroup
+            android:id="@+id/platformRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vegur_bold"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp">
 
-    <Button
-        android:textSize="18sp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/pfquoteBtn"
-        android:text="@string/quoteBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/monomastilRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="Ancho máximo de 11,9 metros"
+                android:text="Mono Mástil"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/bimastilRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="Ancho máximo de 32 metros"
+                android:text="Bi Mástil"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/platformQuoteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vegur_bold"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/quoteBtn"
+            android:textSize="18sp" />
 
 
     </LinearLayout>

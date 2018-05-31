@@ -10,104 +10,104 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/elevatorIv"
-            android:alpha="0.9"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/elevator_background"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/elevatorTv"
-            android:textColor="@color/textcolorLight"
+            <ImageView
+                android:id="@+id/elevatorIv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:alpha="0.9"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/elevator_background" />
+
+            <TextView
+                android:id="@+id/elevatorTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/blackcolorTransparent"
+                android:fontFamily="@font/vegur_bold"
+                android:padding="8dp"
+                android:text="@string/elevatorIb"
+                android:textColor="@color/textcolorLight"
+                android:textSize="35sp" />
+
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/nameInputEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
-            android:text="@string/elevatorIb"
-            android:padding="8dp"
-            android:layout_gravity="bottom"
-            android:textSize="35sp"
-            android:background="@color/blackcolorTransparent"/>
+            android:hint="Ingrese su nombre"
+            android:inputType="textPersonName"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="18sp" />
 
-    </FrameLayout>
-
-
-    <EditText
-        android:inputType="textPersonName"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:hint="Ingrese su nombre"
-        android:textSize="18sp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/nameinputEt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:inputType="textEmailAddress"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textSize="18sp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/mailinputEt"
-        android:hint="Ingrese su correo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:fontFamily="@font/vegur_bold"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textSize="18sp"
-        android:text="Seleccione el modelo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <RadioGroup
-        android:id="@+id/elevatorsRg"
-        android:fontFamily="@font/vegur_bold"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:textSize="14sp"
-            android:tag="Carga maxima 1.500 kilos o 12 personas"
-            android:id="@+id/ecp1500Rb"
-            android:fontFamily="@font/vegur_bold"
-            android:text="ECP-1500"
+        <EditText
+            android:id="@+id/mailInputEt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
-            android:textSize="14sp"
-            android:tag="Carga maxima 2.000 kilos o 18 personas"
-            android:id="@+id/ecp2000Rb"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
-            android:text="ECP-2000"
+            android:hint="Ingrese su correo"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/elevatorRgTitleTv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vegur_bold"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="Seleccione el modelo"
+            android:textSize="18sp" />
 
-    </RadioGroup>
+        <RadioGroup
+            android:id="@+id/elevatorRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vegur_bold"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp">
 
-    <Button
-        android:textSize="18sp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/evquoteBtn"
-        android:text="@string/quoteBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/ecp1500Rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="Carga maxima 1.500 kilos o 12 personas"
+                android:text="ECP-1500"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/ecp2000Rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="Carga maxima 2.000 kilos o 18 personas"
+                android:text="ECP-2000"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/elevatorQuoteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vegur_bold"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/quoteBtn"
+            android:textSize="18sp" />
 
     </LinearLayout>
-
 
 
 </ScrollView>

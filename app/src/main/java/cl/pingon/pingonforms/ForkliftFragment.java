@@ -37,10 +37,10 @@ public class ForkliftFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        final EditText nameinputEt = view.findViewById(R.id.nameinputEt);
-        final EditText mailinputEt = view.findViewById(R.id.mailinputEt);
-        final Button flquoteBtn = view.findViewById(R.id.flquoteBtn);
-        final RadioGroup radioGroup = view.findViewById(R.id.forkLiftRg);
+        final EditText nameinputEt = view.findViewById(R.id.nameInputEt);
+        final EditText mailinputEt = view.findViewById(R.id.mailInputEt);
+        final Button flquoteBtn = view.findViewById(R.id.forkliftQuoteBtn);
+        final RadioGroup radioGroup = view.findViewById(R.id.forkliftRg);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -61,13 +61,13 @@ public class ForkliftFragment extends Fragment {
                 mailinputEt.setError(null);
 
                 String name = nameinputEt.getText().toString();
-                if (nameinputEt.getText().toString().length() == 0 ) {
+                if (nameinputEt.getText().toString().length() == 0) {
                     nameinputEt.setError("Nombre es obligatorio");
                     return;
                 }
 
                 String mail = mailinputEt.getText().toString();
-                if (mailinputEt.getText().toString().length() == 0 ) {
+                if (mailinputEt.getText().toString().length() == 0) {
                     mailinputEt.setError("Correo es obligatorio");
                     return;
                 }
@@ -75,7 +75,7 @@ public class ForkliftFragment extends Fragment {
 
                 int id = radioGroup.getCheckedRadioButtonId();
 
-                if (id != -1){
+                if (id != -1) {
 
                     RadioButton radioButton = radioGroup.findViewById(id);
                     String answer = radioButton.getText().toString();

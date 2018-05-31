@@ -14,10 +14,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class TowerCraneFragment extends Fragment {
 
 
@@ -40,10 +36,10 @@ public class TowerCraneFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        final EditText nameinputEt = view.findViewById(R.id.nameinputEt);
-        final EditText mailinputEt = view.findViewById(R.id.mailinputEt);
-        final Button tcquoteBtn = view.findViewById(R.id.tcquoteBtn);
-        final RadioGroup radioGroup = view.findViewById(R.id.towercraneRg);
+        final EditText nameinputEt = view.findViewById(R.id.nameInputEt);
+        final EditText mailinputEt = view.findViewById(R.id.mailInputEt);
+        final Button tcquoteBtn = view.findViewById(R.id.towerCraneQuoteBtn);
+        final RadioGroup radioGroup = view.findViewById(R.id.towerCraneRg);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

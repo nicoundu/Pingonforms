@@ -17,6 +17,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:id="@+id/towerCraneIv"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:alpha="0.9"
@@ -24,20 +25,21 @@
                 android:src="@mipmap/background_tower_cranes" />
 
             <TextView
+                android:id="@+id/towerCraneTitleTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
+                android:background="@color/blackcolorTransparent"
                 android:fontFamily="@font/vegur_bold"
                 android:padding="8dp"
                 android:text="@string/towercraneIb"
                 android:textColor="@color/textcolorLight"
-                android:textSize="35sp"
-                android:background="@color/blackcolorTransparent"/>
+                android:textSize="35sp" />
 
         </FrameLayout>
 
         <EditText
-            android:id="@+id/nameinputEt"
+            android:id="@+id/nameInputEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
@@ -48,7 +50,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/mailinputEt"
+            android:id="@+id/mailInputEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
@@ -59,6 +61,7 @@
             android:textSize="18sp" />
 
         <TextView
+            android:id="@+id/towerCraneRgTitleTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
@@ -68,7 +71,7 @@
             android:textSize="18sp" />
 
         <RadioGroup
-            android:id="@+id/towercraneRg"
+            android:id="@+id/towerCraneRg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
@@ -123,7 +126,7 @@
         </RadioGroup>
 
         <Button
-            android:id="@+id/tcquoteBtn"
+            android:id="@+id/towerCraneQuoteBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"

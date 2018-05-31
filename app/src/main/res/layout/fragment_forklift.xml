@@ -10,107 +10,110 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:alpha="0.9"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/forklift_background"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:textColor="@color/textcolorLight"
+            <ImageView
+                android:id="@+id/forkliftIv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:alpha="0.9"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/forklift_background" />
+
+            <TextView
+                android:id="@+id/forkliftTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/blackcolorTransparent"
+                android:fontFamily="@font/vegur_bold"
+                android:padding="8dp"
+                android:text="@string/forkliftIb"
+                android:textColor="@color/textcolorLight"
+                android:textSize="35sp" />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/nameInputEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
-            android:text="@string/forkliftIb"
-            android:padding="8dp"
-            android:layout_gravity="bottom"
-            android:textSize="35sp"
-            android:background="@color/blackcolorTransparent"/>
+            android:hint="Ingrese su nombre"
+            android:inputType="textPersonName"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="18sp" />
 
-    </FrameLayout>
-
-    <EditText
-        android:inputType="textPersonName"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:hint="Ingrese su nombre"
-        android:textSize="18sp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/nameinputEt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:inputType="textEmailAddress"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textSize="18sp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/mailinputEt"
-        android:hint="Ingrese su correo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:fontFamily="@font/vegur_bold"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textSize="18sp"
-        android:text="Seleccione el modelo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <RadioGroup
-        android:id="@+id/forkLiftRg"
-        android:fontFamily="@font/vegur_bold"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:textSize="14sp"
-            android:id="@+id/ec1000Rb"
-            android:fontFamily="@font/vegur_bold"
-            android:tag="Carga maxima 1.000 kilos"
-            android:text="EC-1000"
+        <EditText
+            android:id="@+id/mailInputEt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
-            android:textSize="14sp"
-            android:id="@+id/ec1550Rb"
-            android:tag="Carga maxima 1.550 kilos"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
-            android:text="EC-1550"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:hint="Ingrese su correo"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="18sp" />
 
-        <RadioButton
-            android:textSize="14sp"
-            android:id="@+id/ec1700Rb"
-            android:tag="Carga maxima 1.700 kilos"
+        <TextView
+            android:id="@+id/forkliftRgTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
-            android:text="EC-1700"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="Seleccione el modelo"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/forkliftRg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vegur_bold"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp">
 
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/ec1000Rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="Carga maxima 1.000 kilos"
+                android:text="EC-1000"
+                android:textSize="14sp" />
 
-    <Button
-        android:textSize="18sp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/flquoteBtn"
-        android:text="@string/quoteBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/ec1550Rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="Carga maxima 1.550 kilos"
+                android:text="EC-1550"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/ec1700Rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="Carga maxima 1.700 kilos"
+                android:text="EC-1700"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/forkliftQuoteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vegur_bold"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/quoteBtn"
+            android:textSize="18sp" />
 
 
     </LinearLayout>

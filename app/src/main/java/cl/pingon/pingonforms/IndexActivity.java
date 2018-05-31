@@ -17,7 +17,7 @@ public class IndexActivity extends AppCompatActivity {
 
         TextView facebook = findViewById(R.id.facebookTv);
         TextView linkedin = findViewById(R.id.linkedinTv);
-        TextView webpage = findViewById(R.id.webpageTv);
+        TextView webpage = findViewById(R.id.webPageTv);
         TextView equipment = findViewById(R.id.equipmentTv);
         TextView contact = findViewById(R.id.contactTv);
         TextView apply = findViewById(R.id.applyTv);
