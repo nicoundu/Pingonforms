@@ -1,139 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".TowerCraneFragment">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageView
-            android:alpha="0.9"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/background_tower_cranes"
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp" />
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:alpha="0.9"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/background_tower_cranes" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/vegur_bold"
+                android:padding="8dp"
+                android:text="@string/towercraneIb"
+                android:textColor="@color/textcolorLight"
+                android:textSize="35sp"
+                android:background="@color/blackcolorTransparent"/>
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/nameinputEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vegur_bold"
+            android:hint="Ingrese su nombre"
+            android:inputType="textPersonName"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/mailinputEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vegur_bold"
+            android:hint="Ingrese su correo"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
             android:fontFamily="@font/vegur_bold"
-            android:padding="8dp"
-            android:text="@string/towercraneIb"
-            android:textColor="@color/textcolorLight"
-            android:textSize="35sp" />
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="Seleccione el modelo"
+            android:textSize="18sp" />
 
-        <TextView
-            android:layout_gravity="bottom"
-            android:background="@color/blackcolor"
-            android:alpha="0.3"
-            android:textColor="@color/textcolorDark"
+        <RadioGroup
+            android:id="@+id/towercraneRg"
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
-    </FrameLayout>
-
-    <EditText
-        android:inputType="textPersonName"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:hint="Ingrese su nombre"
-        android:textSize="18sp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/nameinputEt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:inputType="textEmailAddress"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textSize="18sp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/mailinputEt"
-        android:hint="Ingrese su correo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:fontFamily="@font/vegur_bold"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textSize="18sp"
-        android:text="Seleccione el modelo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <RadioGroup
-        android:id="@+id/towercraneRg"
-        android:fontFamily="@font/vegur_bold"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:textSize="14sp"
-            android:id="@+id/gp4010Rb"
-            android:tag="@string/gp4010"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
-            android:text="GP 40.10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp">
 
-        <RadioButton
-            android:textSize="14sp"
-            android:id="@+id/gp4511Rb"
-            android:tag="@string/gp4511"
+            <RadioButton
+                android:id="@+id/gp4010Rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="@string/gp4010"
+                android:text="GP 40.10"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/gp4511Rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="@string/gp4511"
+                android:text="GP 45.11"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/gp5113Rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="@string/gp5113"
+                android:text="GP 51.13"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/gp5425Rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="@string/gp5425"
+                android:text="GP 54.25"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/pt56312Rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vegur_bold"
+                android:tag="@string/pt56312"
+                android:text="PT 563.12"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/tcquoteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/vegur_bold"
-            android:text="GP 45.11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/quoteBtn"
+            android:textSize="18sp" />
 
-        <RadioButton
-            android:textSize="14sp"
-            android:id="@+id/gp5113Rb"
-            android:tag="@string/gp5113"
-            android:fontFamily="@font/vegur_bold"
-            android:text="GP 51.13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
-            android:textSize="14sp"
-            android:id="@+id/gp5425Rb"
-            android:tag="@string/gp5425"
-            android:fontFamily="@font/vegur_bold"
-            android:text="GP 54.25"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
-            android:textSize="14sp"
-            android:id="@+id/pt56312Rb"
-            android:tag="@string/pt56312"
-            android:fontFamily="@font/vegur_bold"
-            android:text="PT 563.12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </RadioGroup>
-
-    <Button
-        android:textSize="18sp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:fontFamily="@font/vegur_bold"
-        android:id="@+id/tcquoteBtn"
-        android:text="@string/quoteBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    </LinearLayout>
 
 
-
-
-
-</LinearLayout>
+</ScrollView>

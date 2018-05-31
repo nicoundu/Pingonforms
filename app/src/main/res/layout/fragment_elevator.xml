@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ElevatorFragment"
-    android:orientation="vertical">
+    tools:context=".ElevatorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -27,25 +31,9 @@
             android:text="@string/elevatorIb"
             android:padding="8dp"
             android:layout_gravity="bottom"
-            android:textSize="35sp" />
+            android:textSize="35sp"
+            android:background="@color/blackcolorTransparent"/>
 
-        <TextView
-            android:layout_gravity="bottom"
-            android:alpha="0.4"
-            android:textColor="@color/textcolorLight"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/blackcolor" />
-
-        <LinearLayout
-            android:id="@+id/controls"
-            android:background="#7f000000"
-            android:orientation="vertical"
-            android:layout_gravity="bottom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </LinearLayout>
     </FrameLayout>
 
 
@@ -118,5 +106,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    </LinearLayout>
 
-</LinearLayout>
+
+
+</ScrollView>

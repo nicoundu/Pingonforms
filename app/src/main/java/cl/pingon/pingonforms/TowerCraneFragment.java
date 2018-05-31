@@ -56,25 +56,33 @@ public class TowerCraneFragment extends Fragment {
             }
         });
 
-        if (nameinputEt.getText().toString().length() == 0 )
-            nameinputEt.setError("Nombre es obligatorio");
-
-        if (mailinputEt.getText().toString().length() == 0 )
-            mailinputEt.setError("Correo es obligatorio");
-
 
         tcquoteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                nameinputEt.setError(null);
+                mailinputEt.setError(null);
+
+
+                String name = nameinputEt.getText().toString();
+                if (nameinputEt.getText().toString().length() == 0 ) {
+                    nameinputEt.setError("Nombre es obligatorio");
+                    return;
+                }
+
+                String mail = mailinputEt.getText().toString();
+                if (mailinputEt.getText().toString().length() == 0 ) {
+                    mailinputEt.setError("Correo es obligatorio");
+                    return;
+                }
+
                 int id = radioGroup.getCheckedRadioButtonId();
 
                 if (id != -1){
-
                     RadioButton radioButton = radioGroup.findViewById(id);
                     String answer = radioButton.getText().toString();
-                    Toast.makeText(getContext(), answer, Toast.LENGTH_SHORT).show();
-                    
+                    Toast.makeText(getContext(), "Estimado/a " + name + ", seleccionaste la grúa " + answer, Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getContext(), "Debes marcar una opción", Toast.LENGTH_SHORT).show();
                 }

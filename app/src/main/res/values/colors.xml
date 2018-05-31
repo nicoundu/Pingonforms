@@ -7,5 +7,6 @@
     <color name="textcolorLight">#fffefe</color>
     <color name="backgroundcolor">#c3705f5f</color>
     <color name="blackcolor">#000000</color>
+    <color name="blackcolorTransparent">#99494646</color>
 
 </resources>

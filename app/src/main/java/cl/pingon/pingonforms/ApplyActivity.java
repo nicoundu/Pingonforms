@@ -41,20 +41,34 @@ public class ApplyActivity extends AppCompatActivity {
 
         spinner.setAdapter(adapter);
 
-        if (nameEt.getText().toString().length() == 0 )
-            nameEt.setError("Nombre es obligatorio");
-
-        if (phoneEt.getText().toString().length() == 0 )
-            phoneEt.setError("Teléfono es obligatorio");
-
-        if (mailEt.getText().toString().length() == 0 )
-            mailEt.setError("Correo es obligatorio");
-
         sendBt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                String name = nameEt.getText().toString();
+                if (nameEt.getText().toString().length() == 0 ) {
+                    nameEt.setError("Nombre es obligatorio");
+                    return;
+                }
+
+                String phone = phoneEt.getText().toString();
+                if (phoneEt.getText().toString().length() == 0 ) {
+                    phoneEt.setError("Teléfono es obligatorio");
+                    return;
+                }
+
+                String mail = mailEt.getText().toString();
+                if (mailEt.getText().toString().length() == 0 ) {
+                    mailEt.setError("Correo es obligatorio");
+                    return;
+                }
+
                 if (spinner.getSelectedItem().toString().trim() == "Seleccione un área") {
                     Toast.makeText(ApplyActivity.this, "Debes seleccionar un área", Toast.LENGTH_SHORT).show();
+                } else {
+                    String answer = spinner.getSelectedItem().toString();
+                    Toast.makeText(ApplyActivity.this, "Estimado" + nameEt + "hemos recibido su solicitud", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });
