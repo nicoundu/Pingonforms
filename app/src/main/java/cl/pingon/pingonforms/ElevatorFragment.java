@@ -9,8 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ElevatorFragment extends Fragment {
@@ -32,10 +34,14 @@ public class ElevatorFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+
+        final ImageView elevatorIv = view.findViewById(R.id.elevatorIv);
+        final TextView elevatorTitleTv = view.findViewById(R.id.elevatorTitleTv);
         final EditText nameinputEt = view.findViewById(R.id.nameInputEt);
         final EditText mailinputEt = view.findViewById(R.id.mailInputEt);
-        final Button evquoteBtn = view.findViewById(R.id.elevatorQuoteBtn);
+        final TextView elevatorRgTitleTv = view.findViewById(R.id.elevatorRgTitleTv);
         final RadioGroup radioGroup = view.findViewById(R.id.elevatorRg);
+        final Button evquoteBtn = view.findViewById(R.id.elevatorQuoteBtn);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

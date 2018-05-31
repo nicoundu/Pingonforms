@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class ApplyActivity extends AppCompatActivity {
         final EditText nameEt = findViewById(R.id.nameEt);
         final EditText phoneEt = findViewById(R.id.phoneEt);
         final EditText mailEt = findViewById(R.id.mailEt);
+        final TextView interestAreaTv = findViewById(R.id.interestAreaTv);
         final Spinner spinner = findViewById(R.id.interestAreaDd);
         final Button sendBt = findViewById(R.id.sendBtn);
 

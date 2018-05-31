@@ -10,8 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PlatformsFragment extends Fragment {
@@ -36,10 +38,14 @@ public class PlatformsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        final ImageView platformIv = view.findViewById(R.id.platformIv);
+        final TextView platformTitleTv = view.findViewById(R.id.platformTitleTv);
         final EditText nameinputEt = view.findViewById(R.id.nameInputEt);
         final EditText mailinputEt = view.findViewById(R.id.mailInputEt);
-        final Button pfquoteBtn = view.findViewById(R.id.platformQuoteBtn);
+        final TextView platformRgTitleTv = view.findViewById(R.id.platformRgTitleTv);
         final RadioGroup radioGroup = view.findViewById(R.id.platformRg);
+        final Button pfquoteBtn = view.findViewById(R.id.platformQuoteBtn);
+
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

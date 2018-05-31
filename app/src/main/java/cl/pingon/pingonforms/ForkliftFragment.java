@@ -10,8 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -37,10 +39,14 @@ public class ForkliftFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        final ImageView forkliftIv = view.findViewById(R.id.forkliftIv);
+        final TextView forkliftTitleTv = view.findViewById(R.id.forkliftTitleTv);
         final EditText nameinputEt = view.findViewById(R.id.nameInputEt);
         final EditText mailinputEt = view.findViewById(R.id.mailInputEt);
-        final Button flquoteBtn = view.findViewById(R.id.forkliftQuoteBtn);
+        final TextView forkliftRgTitleTv = view.findViewById(R.id.forkliftRgTitleTv);
         final RadioGroup radioGroup = view.findViewById(R.id.forkliftRg);
+        final Button flquoteBtn = view.findViewById(R.id.forkliftQuoteBtn);
+
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
