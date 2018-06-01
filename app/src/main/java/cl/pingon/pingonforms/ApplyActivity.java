@@ -54,7 +54,7 @@ public class ApplyActivity extends AppCompatActivity {
                 if (phoneEt.getText().toString().length() == 0) {
                     Toast.makeText(ApplyActivity.this, "Debes ingresar tu telefono", Toast.LENGTH_SHORT).show();
                 }
-                if (phoneEt.getText().toString().length() < 8) {
+                if (phoneEt.getText().toString().length() <= 9) {
                     Toast.makeText(ApplyActivity.this, "El teléfono debe tener 9 numeros", Toast.LENGTH_SHORT).show();
                     return;
                 }
